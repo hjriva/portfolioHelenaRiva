@@ -5,56 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Helena</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
+    <nav id="nav">
+        <a href="#sobremim" id="lsobremim">Sobre mim</a>
+        <a href="#portfolio" id="lportfolio">Portfólio</a>
+        <a href="#formacao" id="lformacao">Formação educacional</a>
+        <a href="#contato" id="lcontato">Contato</a>
+    </nav>
     <header>
-        <div id="menu">
-        <a href="">Sobre mim</a>
-        <a href="#formacao">Formação educacional</a>
-        <a href="">Portfólio</a>
-        <a href="">Contato</a>
+    <div id="menu">
+        <h1>CV DIGITAL</h1>
+        <a href="#sobremim" id="lsobremim">Sobre mim</a>
+        <a href="#portfolio" id="lportfolio">Portfólio</a>
+        <a href="#formacao" id="lformacao">Formação educacional</a>
+        <a href="#contato" id="lcontato">Contato</a>
     </div>
     </header>
+
     <div id="sobremim" class="box">
-        <h1>Helena Riva</h2>
+        <div class="innerdiv">
+        <h1>Helena Riva</h1>
         <ul>
             <li>24 anos</li>
             <li>Porto Alegre, Rio Grande do Sul</li>
-            Experiência profissional
+            
+            <h3>Experiência profissional</h3>
             <ul>
                 <li>Atendimento ao cliente (2 anos)</li>
-                <li>Processos de assistência admnistrativa</li>
+                <li>Processos de assistência admnistrativa (1 ano)</li>
             </ul>
-            Objetivo
+            
+            <h3>Objetivo</h3>
             <ul>
                 <li>Atuar no desenvolvimento de sistemas e websites.</li>
             </ul>
         </ul>
+        </div>
     </div>
+
+    <div id="portfolio" class="box">
+        <div class="innerdiv">
+        <h1>Portfólio</h1>
+        <br>
+        <div id="imgbar">
+        <a href="https://hjriva.github.io/calculadora-de-horas/" target="_blank"><img src="imgs/calculadora.png" alt=""></a>
+        <a href="https://hjriva.github.io/Contador-de-palavras-e-caracteres" target="_blank"><img src="imgs/contador.png" alt=""></a>
+        <a href="https://hjriva.github.io/calculadoradeporcentagem/" target="_blank"><img src="imgs/porcentagem.png" alt=""></a>
+        </div>
+    </div>
+    </div>
+    
+
     <div id="formacao" class="box">
-    <h2>Formação acadêmica</h2>
+        <div class="innerdiv">
+    <h1>Formação acadêmica</h1>
+    <br>
         <h3>Tecnologia em Análise e Desenvolvimento de Sistemas</h2>
         <ul>
             <li>Instituição: UNINTER</li>
             <li>Em andamento (abril de 2024 – conclusão prevista em outubro de 2025)</li>
         </ul>
-    <h2>Habilidades</h2>
+    <h3>Habilidades</h3>
         <ul>
-            <li>Inglês: fluente</li>
-            <li>Office: Word, PowerPoint e Excel intermediário</li>
+            <li>&nbsp;&nbsp;Inglês: fluente</li>
+            <li>&nbsp;&nbsp;Office: Word, PowerPoint e Excel intermediário</li>
         </ul>
     </div>
-    <div id="portfolio" class="box">
-        <h1>Portfólio</h1>
-        <a href=""><img src="calculadora.png" alt=""></a>
-        <a href=""><img src="contador.png" alt=""></a>
-        <a href=""><img src="porcentagem.png" alt=""></a>
     </div>
+   
     <div id="contato" class="box">
+        <div class="innerdiv">
         <h1>Contato</h1>
-        Nome: <input type="text"> <br>
-        E-mail: <input type="email" name="" id=""> <br>
-        Mensagem: <textarea name="" id=""></textarea>
+        <br>
+            <div id="contato_container">
+                <div> Nome: <input type="text"> </div>
+        
+                <div> E-mail: <input type="email" name="" id=""> </div>
+                
     </div>
+    <br>
+    <div>Mensagem: <br> <textarea name="" id=""></textarea> </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,7 +1,8 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, 'Times New Roman', Times, serif;
     line-height: 35px;
+    margin: 0px;
+    padding: 0px;
 }
 
 #menu {
@@ -11,6 +12,7 @@
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    
 }
 
 #menu a {
@@ -21,8 +23,23 @@
 }
 
 #menu a:hover {
-    background-color: black;
-    color: white ;
+    color: white;
+}
+
+#lcontato:hover {
+    background-color: #4b4b4b;
+}
+
+#lformacao:hover {
+    background-color: #bf00ff  
+}
+
+#lportfolio:hover {
+    background-color: blue;
+}
+
+#lsobremim:hover {
+    background-color: #3172f5;
 }
 
 header {
@@ -38,5 +55,100 @@ header {
 }
 
 .box {
-    height : 100vh
+    height : 100vh;
 }
+
+.innerdiv {
+    margin: auto 0px auto 0px;
+    background-color:rgb(255, 255, 255);
+    position: relative;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #4b4b4b;
+    
+}
+
+#formacao .innerdiv, #sobremim .innerdiv {
+    padding: 25px 90px;
+}
+
+#imgbar {
+    display: block;
+    margin: 1px auto;
+    width: fit-content;
+    text-align: center;
+}
+
+#formacao {
+    background-color: #e59efd;
+}
+
+#sobremim {  
+    background-color: #cddbf8;
+}
+
+#portfolio  .innerdiv {
+    padding-top: 20px;
+}
+
+#contato {
+    text-align: center;
+}
+
+ul {
+    margin: 15px;
+    padding-left: 50px;
+}
+
+h1 {
+    font-size: 40pt;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    border: solid rgb(75, 75, 75) 1px;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 520px;
+    height: 200px;
+}
+
+input {
+    width: 200px;
+}
+
+#contato_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+img:hover {
+    opacity: 0.5;
+}
+
+nav {
+    height: 30px;
+    display: none; /*deixar o display none como default evita o bug ao abrir o site*/
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.842);
+    padding-top: 5px;
+    padding-bottom: 10px;
+    position: fixed; 
+    top: 0;          
+    width: 100%;    
+    z-index: 1000;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 2px 5px;
+    color: black;   
+}
+
